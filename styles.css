@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 500;
+    scrollbar-width: none;
+}
+.home{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto, 6);
+    background-color: black;
+    color: white;
+}
+#nav{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.link{
+    text-decoration: none;
+    color: white;
+    margin: 0px 20px;
+    font-size: 20px;
+}
+.link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #66FF00;
+    transition: width .3s;
+}
+.link:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+.primaryBtn{
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    margin-right: 20px;
+    border-style: none;
+    border-radius: 25px;
+    background-image: linear-gradient(130deg, #4FFFB0, #66FF00);
+}
+.primaryBtn:hover{
+    background-image: linear-gradient(130deg, #66FF00, #4FFFB0);
+    cursor: pointer;
+}
+
+#hero{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+#titleSec{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin-left: 70px;
+}
+#profileSec{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#profilePic{
+    padding: 0;
+    margin: 0;
+    height: 490px;
+    width: 490px;
+    border-radius: 20px;
+    z-index: 1;
+}
+.box{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 50px;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 100%;
+    background: #66FF00;
+    animation: rotate 12s linear infinite;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg)
+    }
+}
+
+
+#titleSec h1{
+    font-size: 90px;
+}
+#titleSec h4{
+    font-size: 25px;
+    font-weight: 900;
+}
