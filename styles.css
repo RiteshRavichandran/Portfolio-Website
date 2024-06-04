@@ -159,6 +159,17 @@
     font-weight: 900;
 }
 
+#numbers{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 1240px) {
     #hero{
         grid-column-start: 1;
@@ -198,4 +209,3 @@
         overflow: hidden;
     }
 }
-
