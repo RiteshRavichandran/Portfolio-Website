@@ -1,9 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "JetBrains Mono", monospace;
     font-weight: 500;
     scrollbar-width: none;
+    
 }
 .home{
     display: grid;
@@ -176,7 +178,7 @@
     align-items: center;
 }
 .counter{
-    font-size: 60px;
+    font-size: 70px;
     color: #66FF00;
 }
 .desc{
@@ -221,4 +223,39 @@
         align-items: center;
         overflow: hidden;
     }
+}
+
+@keyframes slide{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(70%);
+    }
+}
+
+#skills{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    width: 100%;
+    padding: 60px 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logos-slide{
+    display: inline-block;
+    animation: 20s slide infinite linear;
+}
+.logos-slide i{
+    color: #808080;
+    margin: 0 40px;
+    cursor: pointer;
+}
+.logos-slide i:hover{
+    color: #66FF00;
 }
