@@ -264,6 +264,10 @@
     #numbers{
         flex-direction: column;
     }
+    #logo{
+        left: 5px;
+        font-size: 25px;
+    }
 }
 
 @media (max-width: 612px){
@@ -278,6 +282,10 @@
     #titleSec p{
         font-size: 10px;
     }
+    #logo{
+        left: 5px;
+        font-size: 25px;
+    }
 }
 @media (max-width: 450px){
 
@@ -288,5 +296,6 @@
     }
     #logo{
         left: 5px;
+        font-size: 25px;
     }
 }
