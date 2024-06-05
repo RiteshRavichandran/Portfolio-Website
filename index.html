@@ -12,14 +12,24 @@
 </head>
 <body>
     <div class="home">
-        <div class="sec" id="nav">
-            <a href="." class="link" id="logo">Rite.</a>
+        <div class="sidebar">
+            <a href="#" class="link" style="margin-bottom: 5px;" onclick=hideSidebar()><i class="fa-solid fa-xmark fa-2x"></i></a>
             <a href="." class="link">Home</a>
             <a href="#" class="link">Services</a>
             <a href="#" class="link">Resume</a>
             <a href="#" class="link">Work</a>
             <a href="#" class="link">Contact</a>
             <button class="primaryBtn">Hire Me</button>
+        </div>
+        <div class="sec" id="nav">
+            <a href="." class="link" id="logo">Rite.</a>
+            <a href="." class="link hideOnMobile">Home</a>
+            <a href="#" class="link hideOnMobile">Services</a>
+            <a href="#" class="link hideOnMobile">Resume</a>
+            <a href="#" class="link hideOnMobile">Work</a>
+            <a href="#" class="link hideOnMobile">Contact</a>
+            <a class="link menuBtn" onclick=showSidebar()><i class="fa-solid fa-bars fa-2x"></i></a>
+            <button class="primaryBtn hideOnMobile">Hire Me</button>
         </div>
         <div class="sec" id="hero">
             <div id="titleSec">
@@ -72,6 +82,7 @@
                 <i class="fa-solid fa-cloud fa-6x"></i>
                 <i class="fa-brands fa-figma fa-6x"></i>
                 <i class="fa-brands fa-sass fa-6x"></i>
+                <i class="fa-brands fa-git-alt fa-6x"></i>
             </div>
             <div class="logos-slide">
                 <i class="fa-brands fa-html5 fa-6x"></i>
@@ -89,6 +100,7 @@
                 <i class="fa-solid fa-cloud fa-6x"></i>
                 <i class="fa-brands fa-figma fa-6x"></i>
                 <i class="fa-brands fa-sass fa-6x"></i>
+                <i class="fa-brands fa-git-alt fa-6x"></i>
             </div>
         </div>
         <div class="sec">item5</div>
