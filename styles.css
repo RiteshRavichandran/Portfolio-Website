@@ -13,7 +13,7 @@
     grid-template-rows: repeat(auto, 6);
     background-color: black;
     color: white;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 #nav{
     grid-column-start: 1;
@@ -280,9 +280,13 @@
     }
 }
 @media (max-width: 450px){
+
     #buttons #cv{
         width: 100%;
-        margin: 0px 20px;
         margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    #logo{
+        left: 5px;
     }
 }
