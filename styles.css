@@ -113,15 +113,11 @@
     grid-row-start: 2;
     grid-row-end: 3;
     width: 100%;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #titleSec{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
     width: 100%;
     height: 100%;
     display: flex;
@@ -133,10 +129,6 @@
 #profileSec{
     height: 100%;
     width: 100%;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -251,41 +243,14 @@
 
 @media (max-width: 1240px) {
     #hero{
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        width: 100%;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto;
+        flex-direction: column;
         margin-top: 20px;
     }
     #titleSec{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
         margin-left: 0px;
-    }
-    #profileSec{
-        height: 100%;
-        width: 100%;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
     }
 }
 
@@ -295,5 +260,29 @@
     }
     .menuBtn{
         display: block;
+    }
+    #numbers{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 612px){
+    #titleSec h1{
+        font-size: 50px;
+    }
+    
+    #titleSec h4{
+        font-size: 20px;
+        font-weight: 900;
+    }
+    #titleSec p{
+        font-size: 10px;
+    }
+}
+@media (max-width: 450px){
+    #buttons #cv{
+        width: 100%;
+        margin: 0px 20px;
+        margin-top: 20px;
     }
 }
