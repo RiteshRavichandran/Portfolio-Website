@@ -142,7 +142,8 @@
   align-items: center;
   overflow: hidden;
   border-radius: 100%;
-  margin: 50px 0px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 #profilePic {
   padding: 0;
